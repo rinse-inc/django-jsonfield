@@ -1,6 +1,6 @@
-from django.contrib.postgres.fields import JSONField as PostgresJSONField
 from django.db import models
 from jsonfield.fields import JSONField
+from django.db.models import JSONField as PostgresJSONField
 
 
 class JSONFieldTestModel(models.Model):

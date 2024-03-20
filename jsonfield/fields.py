@@ -6,12 +6,12 @@ from django.core.exceptions import ValidationError
 from django.conf import settings
 from django.db import models
 from django.db.models.lookups import Exact, IExact, In, Contains, IContains
-from django.utils.translation import ugettext_lazy as _
 import six
 
 from .utils import _resolve_object_path
 from .widgets import JSONWidget
 from .forms import JSONFormField
+from django.utils.translation import gettext_lazy as _
 
 
 class JSONField(models.Field):
